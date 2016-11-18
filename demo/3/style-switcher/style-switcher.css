@@ -1,0 +1,176 @@
+/*
+ *Style Switcher
+ *Copyright 2014 8Guild.com
+*/
+
+.style-switcher {
+	position: fixed;
+	z-index: 1010;
+	width: 290px;
+	height: 390px;
+	top: 185px;
+	left: 0px;
+	background: #fff;
+	text-align: center;
+	padding: 15px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+	transition: left 0.4s;
+}
+.style-switcher.hiddenSwitcher {
+	left: -292px;
+}
+.ie .style-switcher {
+	border: 1px solid #cecece;
+}
+.style-switcher h2 {
+	font-size: 1.3em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.style-switcher h3 {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+.style-switcher h4 {
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+.style-switcher #switcher-toggle {
+	position: absolute;
+	top: 0;
+	right: -44px;
+	padding: 0px 6px 0px 1px;
+	background: #fff;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+}
+.style-switcher #switcher-toggle i:before {
+	margin-left: 6px;
+}
+.ie .style-switcher #switcher-toggle {
+	top: -1px;
+	border: 1px solid #cecece;
+}
+.style-switcher #switcher-toggle i {
+	font-size: 2em;
+}
+.style-switcher #switcher-toggle:before {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 20px;
+	height: 65px;
+	top: 0;
+	left: -19px;
+	background: #fff;
+}
+.style-switcher #color-switcher {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.style-switcher #color-switcher span {
+	position: relative;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin: 0 2px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.style-switcher #color-switcher span.current:before {
+	position: absolute;
+	display: block;
+	font-family: 'FontAwesome';
+	content: "\f00c";
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	margin: -10px 0 0 -8px;
+}
+.style-switcher  #layout-switcher {
+	margin-bottom: 15px;
+}
+.style-switcher #layout-switcher span,
+.style-switcher #header-opts a {
+	display: inline-block;
+	font-size: 1em;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	width: 116px;
+	padding: 4px 0 6px 0;
+	background: #333; 
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.style-switcher #header-opts a {
+	margin-bottom: 10px;
+}
+.style-switcher #header-opts a:last-child {
+	width: 244px;
+}
+.style-switcher #layout-switcher span:hover,
+.style-switcher #header-opts a:hover {
+	background: #2f8cea;
+}
+.style-switcher #layout-switcher span:first-child,
+.style-switcher #header-opts a:first-child {
+	margin-right: 8px;
+}
+.style-switcher #layout-switcher span.current {
+	opacity: .4;
+	filter alpha(opacity=40)
+	cursor: default !important;
+}
+.style-switcher #layout-switcher span.current:hover {
+	background: #333; 
+	cursor: default !important;
+}
+.style-switcher #patterns {
+	margin-bottom: 8px;
+}
+.style-switcher #patterns span {
+	display: inline-block;
+	width: 60px;
+	height: 40px;
+	margin: 4px;
+	border: 1px solid #cecece;
+	cursor: pointer;
+	transition: border-color 0.3s;
+}
+.style-switcher #patterns span.current {
+	border: 1px solid #2f8cea;
+}
+.back-home {
+	display: block;
+	width: 244px;
+	border-top: 1px solid #cecece;
+	color: #2f8cea;
+	text-decoration: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	margin: 10px 0 0 7px;
+	padding-top: 12px;
+	transition: color 0.3s;
+}
+.back-home:hover {
+	color: #3a3a3a;
+}
+@-moz-document url-prefix() { 
+  .back-home {
+		margin: 8px 0 0 7px;
+		padding-top: 9px;
+  }
+}
+.ie .style-switcher { display: none; }
+
+@media screen and (max-width: 1024px) {
+	.style-switcher { display: none; }
+}
