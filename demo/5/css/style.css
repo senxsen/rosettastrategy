@@ -1,0 +1,423 @@
+/* ==========================================
+
+Template Name:Kuroko Responsive Personal Template
+
+=============================================*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License:  none (public domain)
+ */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*========================== Global
+===================================================== */
+
+.clearfix {
+	*zoom: 1;
+}
+
+.clearfix:before,.clearfix:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.clearfix:after,
+.clear,
+.cl {
+	clear: both;
+}
+
+html, body {
+    height:100%;
+}
+
+/* overlay - loading screen 
+.js #loading-overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	background: #fff url('../images/loading.gif') center center no-repeat;
+}
+*/
+*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    font:14px/21px 'PT Sans Narrow', sans-serif;
+    color:#323232;
+}
+
+h1{
+    font: 400 42px/1 'Oswald', sans-serif;
+    margin-bottom:30px;
+}
+
+h2{
+    font:400 32px/1 'Oswald', sans-serif;
+    margin-bottom:25px;
+}
+
+h3{
+    font:400 26px/1 'Oswald', sans-serif;
+    margin-bottom:20px;
+}
+
+h4{
+    font:400 21px/1 'Oswald', sans-serif;
+    margin-bottom:15px;
+}
+
+h5{
+    font:400 18px/1 'Oswald', sans-serif;
+    margin-bottom:15px;
+}
+
+h6{
+    font:400 16px/1 'Oswald', sans-serif;
+    margin-bottom:15px;
+}
+
+a {
+    text-decoration:none;
+    -webkit-transition:color 0.3s;
+    -moz-transition:color 0.3s;
+    -o-transition:color 0.3s;
+    -ms-transition:color 0.3s;
+    transition:color 0.3s;
+
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+hr {
+    border:none;
+    border-bottom:1px solid #fff;
+    margin:30px 0;
+}
+
+
+img {
+    width:100%;
+    max-width:100%;
+    height:auto;    
+}
+
+strong {
+    font-weight:bold;
+}
+
+em {
+    font-style:italic;
+}
+
+small {
+    font-size:75%;
+}
+
+p {
+    margin-bottom:20px;
+}
+
+/* same font for all fields */
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select {
+    font:14px/21px 'PT Sans Narrow', sans-serif;
+}
+
+/* border fix */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+select:focus {
+    outline:none;
+}
+/*========================== Helper Classes
+===================================================== */
+
+
+/* margin-bottom size  / helper classes*/
+.small {
+	margin-bottom: 20px;
+}
+
+.medium {
+	margin-bottom: 30px;
+}
+
+.large {
+	margin-bottom: 50px;
+}
+
+/* alignment classes */
+.pull-right {
+	float: right;
+}
+
+.pull-left {
+	float: left;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.left-text {
+	text-align: left;
+}
+
+.right-text {
+	text-align: right;
+}
+
+.color-change {
+	color: #16a085;
+}
+
+/* Our general container */
+.container {
+	width: 960px;
+}
+.small-container {
+    width:600px;
+    margin:0 auto;
+}
+.right-container,
+.left-container {
+    width:480px;
+    position:absolute;
+    top:0;
+}
+.left-container {
+    left:0;
+}
+.right-container {
+    right:0;
+}
+
+/* Classes for columns / Layout */
+.one-full {
+	width: 100%;
+    padding-right: 1.5% !important;
+	padding-left: 1.5%;
+}
+
+.one-quarter {
+	width: 22%;
+}
+
+.three-quarter {
+	width: 72%;
+}
+
+.one-half {
+	width: 47%;
+}
+
+.one-three {
+	width: 30.333%;
+}
+
+.two-three {
+	width: 63.666%;
+}
+
+.one-half.middle,
+.one-three.middle,
+.two-three.middle,
+.three-quarter.middle {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.one-half.middle {
+	width: 47%;
+}
+
+.one-three.middle {
+	width: 30.333%;
+}
+
+.two-three.middle {
+	width: 63.666%;
+}
+
+.three-quarter.middle {
+	width: 72%;
+}
+
+.one-quarter.first,
+.one-three.first,
+.one-half.first,
+.three-quarter.first,
+.two-three.first {
+	margin-left: 0 !important;
+}
+
+.one-quarter.last,
+.one-three.last,
+.one-half.last,
+.three-quarter.last,
+.two-three.last {
+	margin-right: 0 !important;
+}
+
+.one-quarter,
+.three-quarter,
+.one-half,
+.one-three,
+.two-three {
+    float: left;
+    min-height: 1px;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+}
+
+/* General bottom margin */
+.one-quarter,
+.three-quarter,
+.one-half,
+.one-three,
+.two-three,
+.one-full {
+	margin-bottom: 50px;
+}
+#home {
+	position:relative;
+	text-align:center;
+	width:100%;
+	height:100%;
+	background: url(../images/loading.gif) no-repeat center center;
+}
+#logo {
+	position:absolute;
+	top:100px;
+	left:50%;
+	margin-left:-40px;
+	width:80px;
+	height:80px;
+}
+
+/*========================== Responsive -- Media Queries
+===================================================== */
+/* Large desktop */
+@media (min-width: 1200px) { 
+    .container {
+        width: 1180px;
+    }
+	.small-container {
+        width:720px;
+    }
+    .right-container,
+    .left-container {
+        width:600px;
+    }
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.container {
+        width: 100%;
+    }
+    .small-container {
+        width:720px;
+    }
+    .right-container,
+    .left-container {
+        width:600px;
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	.container,
+    .small-container,
+    .right-container,
+    .left-container {
+        width: 100%;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	.one-quarter,
+    .three-quarter,
+    .one-half,
+    .one-three,
+    .two-three {
+        width:100%;
+    }
+}
